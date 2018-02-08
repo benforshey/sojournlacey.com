@@ -1,0 +1,162 @@
+// ******
+// Imports
+
+
+// ******
+// Colors and Shadows
+// declaring my variables
+$primary-color: #476b71; // Sojourn teal hue
+$primary-color-value: #5e6e71; // grayer Sojourn teal value
+$secondary-color: #827d00; // Sojourn gold
+$secondary-color-value: #828161; // grayer Sojourn gold value
+$tertiary-color: #bcac5e; // Sojourn brown/
+$tertiary-color-value: #bcb284; // grayer Sojourn brown
+$body-bg: #494949; // body background color
+$cta-bg: $body-bg; // background color for CTA section
+$cta-bg-end: #585858; //  stop for CTA gradient
+$content-bg: #FAFAFA;//$tertiary-color; // background color for content section
+$content-bg-end: #FAFAFA;//#dad1a6; // stop for content gradient
+$topbar-bg-color: $primary-color-value; // top bar color
+$topbar-dropdown-bg: $primary-color-value; // top bar dropdown color
+$topbar-link-bg-active: lighten($topbar-bg-color, 15%); // lighten by 15% (from default of darken by 3%)
+$topbar-link-bg-active-hover: darken($primary-color, 15%);
+$panel-bg: rgba(#FFFCF2, 0.90); // background color for panels
+$table-head-bg: $cta-bg-end;
+$table-bg: $panel-bg; // background color for tables
+$table-even-row-bg: lighten($tertiary-color, 40%); //setting even row color on tables to lighter shade
+$table-head-font-color: white;
+$tabs-navigation-active-bg-color: $primary-color;
+$tabs-navigation-bg-color: $body-bg;
+$tabs-navigation-font-color: white;
+$blockquote-font-color: scale-color(#222222, $lightness: 15%);
+// gradient for .cta-wrapper
+.cta-wrapper {
+  background-color: $cta-bg;
+  /* Safari 4+, Chrome 1-9 */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($cta-bg), to($cta-bg-end));
+  /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+  background-image: -webkit-linear-gradient(top, $cta-bg, $cta-bg-end);
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(top, $cta-bg, $cta-bg-end);
+  /* IE 10+ */
+  background-image: -ms-linear-gradient(top, $cta-bg, $cta-bg-end);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(top, $cta-bg, $cta-bg-end);
+}
+// set text to white
+.cta-wrapper h1, footer a, footer address {
+  color: white;
+}
+// gradient for .content-wrapper
+.content-wrapper {
+  background: $content-bg;
+  /* Safari 4+, Chrome 1-9 */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($content-bg), to($content-bg-end));
+  /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+  background-image: -webkit-linear-gradient(top, $content-bg, $content-bg-end);
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(top, $content-bg, $content-bg-end);
+  /* IE 10+ */
+  background-image: -ms-linear-gradient(top, $content-bg, $content-bg-end);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(top, $content-bg, $content-bg-end);
+}
+// set background color for footer
+footer {
+  background: $primary-color-value;
+}
+
+// ******
+// Typography
+
+// declaring my variables
+$paragraph-font-family: "Merriweather Sans", sans-serif;
+$paragraph-font-weight: 400;
+$body-font-family: "Merriweather Sans", sans-serif;
+$body-font-weight: 400;
+$header-font-family: "Merriweather", serif;
+$header-font-weight: 400;
+$button-font-family: "Merriweather", serif;
+$button-font-weight: 400;
+$link-font-weight: 700;
+$accordion-navigation-font-family: $body-font-family;
+
+// set links typography
+a {
+  font-weight: $link-font-weight;
+}
+// center text
+.center {
+  text-align: center;
+}
+
+footer a {
+  font-weight: $body-font-weight;
+  line-height: 2em;
+}
+
+// ******
+// Margins, Padding, and Dimensions
+
+// declaring my variables
+$footer-margin-top: 2em;
+// adds padding to SCC logo on nav sidebar, for mobile column collapse
+.logo-nav {
+  margin-top: 1em;
+  //max-height: 8em;
+}
+// adds padding to the top and bottom
+.cta-wrapper, .content-wrapper, .donation-form {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+// adds margin below each article
+article {
+  padding-bottom: 2em;
+}
+// adds margin above the get directions button
+#get-directions {
+  margin-top: 2em;
+}
+// adds padding below the giving button
+.donate {
+  padding-bottom: 2em;
+}
+// sets footer margin and nav margin from top of footer
+footer {
+  // margin-top: $footer-margin-top;
+  nav {
+    margin-top: $footer-margin-top;
+  }
+  address {
+    margin: $footer-margin-top 0;
+    line-height: 1.5;
+  }
+}
+// gives boundary to the social icons
+.social {
+  max-width: 3em;
+  max-height: 3em;
+}
+// keeps the white Sojourn logo inside the topbar
+.logo-white {
+  width: 2em;
+  height: 2em;
+}
+// float and margin for left bio pics (which are 250px by 250px)
+.bio-pic-left {
+  margin: 0 1em 1em 1em;
+  float: left;
+	width: 250px;
+	height: 250px;
+}
+// float and margin for right bio pics (which are 250px by 250px)
+.bio-pic-right {
+  margin: 0 1em 1em 1em;
+  float: right;
+	width: 250px;
+	height:250px;
+}
+.text-right {
+  float: right;
+}
